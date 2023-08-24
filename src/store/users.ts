@@ -9,7 +9,7 @@ export const userDataStore = defineStore('userData', () => {
             title: 'Brunch this weekend?',
             name: 'Ali Connors',
             reviews: `I'll be in your neighborhood doing errands this weekend. Do you want to hang out?`,
-            county: 10,
+            quantity: 10,
             location: {
                 country: 'Russia',
                 address: 'Tverskay',
@@ -21,7 +21,7 @@ export const userDataStore = defineStore('userData', () => {
             title: 'Summer BBQ4',
             name: 'to Alex, Scott, Jennifer',
             reviews: `Wish I could come, but I'm out of town this weekend.`,
-            county: 5,
+            quantity: 5,
             location: {
                 country: 'Нидерланды',
                 address: 'Площадь Дам (De Dam) в Амстердаме',
@@ -33,7 +33,7 @@ export const userDataStore = defineStore('userData', () => {
             title: 'Oui oui',
             name: 'Sandra Adams',
             reviews: 'Do you have Paris recommendations? Have you ever been?',
-            county: 7,
+            quantity: 7,
             location: {
                 country: 'Италия',
                 address: 'Виа дель Корсо (Via del Corso)',
@@ -45,7 +45,7 @@ export const userDataStore = defineStore('userData', () => {
             title: 'Birthday gift',
             name: 'Trevor Hansen',
             reviews: 'Have any ideas about what we should get Heidi for her birthday?',
-            county: 17,
+            quantity: 17,
             location: {
                 country: 'Германия',
                 address: 'Брайтештрассе-пешеходная улица',
@@ -57,7 +57,7 @@ export const userDataStore = defineStore('userData', () => {
             title: 'Recipe to try',
             name: 'Britta Holt',
             reviews: 'We should eat this: Grate, Squash, Corn, and tomatillo Tacos.',
-            county: 28,
+            quantity: 28,
             location: {
                 country: 'Франция',
                 address: 'Rue Adolphe-Jullien',
@@ -66,7 +66,39 @@ export const userDataStore = defineStore('userData', () => {
         },
     ])
     // actions
+    const country = ref([
+        {
+            country: 'Russia',
+        },
+        {
+            country: 'Нидерланды',
+        },
+        {
+            country: 'Германия',
+        },
+        {
+            country: 'Франция',
+        },
+    ])
+    const quantity = ref ([
+        {
+            quantity: 10
+        },
+        {
+            quantity: 5
+        },
+        {
+            quantity: 7
+        },
+        {
+            quantity: 17
+        },
+        {
+            quantity: 28
+        },
+    ])
+
 
     // getters
-    return {users}
+    return {users, country,quantity}
 },)

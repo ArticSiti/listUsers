@@ -35,11 +35,10 @@ const selectOption = (country: any) =>{
 <template>
 	<div class='selected'>
 		<p @click='optionVisible = !optionVisible' :class='{selected_active: optionVisible}'>{{ selected }}<span class="selected__placeholder" v-if="!selected">Выберите фильтр</span></p>
-		<transition name='slide-fade-route'>
+		<transition name='fade'>
 			<div class='selected__options' v-if='optionVisible'>
       <span v-for='(country,index) in options' :key='index' @click='selectOption(country)'>
-        {{ country.title }}
-        {{ country.county }}
+        {{ country.country || country.quantity }}
       </span>
 			</div>
 		</transition>
