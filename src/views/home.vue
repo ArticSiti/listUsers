@@ -64,8 +64,6 @@ const resetFilter = () =>{
 </template>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/_vendor/_vars.scss";
-
 .home {
 	&__list {
 		display: grid;

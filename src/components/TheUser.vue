@@ -40,7 +40,7 @@ const closeCard = () => {
 	<div class="card">
 		<div class="card__preview" @click="detailCard(user.location)">
 			<img :src="user.avatar" alt="">
-			<span>{{ user.county }}</span>
+			<span>{{ user.quantity }}</span>
 		</div>
 		<transition name="fade">
 			<ThePopUp class="pop-up" :card-content="cardContent" v-show="cardActive" @close="closeCard"/>
@@ -55,7 +55,6 @@ const closeCard = () => {
 </template>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/_vendor/_vars.scss";
 
 .card {
 	display: grid;

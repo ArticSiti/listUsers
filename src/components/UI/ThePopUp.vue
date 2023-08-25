@@ -30,7 +30,6 @@ const closeOverlay = () => {
 </template>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/_vendor/_vars.scss";
 .pop-up {
 	position: fixed;
 	top: 0;

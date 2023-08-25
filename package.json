@@ -9,6 +9,7 @@
   "dependencies": {
     "@mahdikhashan/vue3-click-outside": "^0.1.2",
     "click-outside-vue3": "^4.0.1",
+    "node-sass": "^7.0.3",
     "pinia": "^2.1.6",
     "register-service-worker": "^1.7.2",
     "vue": "^3.2.13",
@@ -23,6 +24,7 @@
     "@vue/cli-service": "~5.0.0",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
+    "style-resources-loader": "^1.5.0",
     "typescript": "~4.5.5"
   },
   "browserslist": [
